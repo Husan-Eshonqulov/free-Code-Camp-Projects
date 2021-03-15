@@ -1,0 +1,316 @@
+body {
+    font-size: 1.8rem;
+    font-family: sans-serif; 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    padding-right: 5rem;
+    position: fixed;
+    top: 0;
+}
+
+header img {
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    display: block;
+    width: 76%;
+    margin: 0 auto;
+    margin-top: 9rem;
+}
+
+main .container {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+form h2 {
+    font-weight: 600;
+}
+
+form input {
+    display: block;
+    margin: 0 auto;
+}
+
+form input#email {
+    width: 40%;
+    padding: 0.6rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    font-size: 1.4rem;
+} 
+
+form input#submit {
+    width: 20%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #f1c40f;
+    border: none;
+}
+
+.advantages .left {
+  display: inline-block;
+  width: 13%;
+  font-size: 5.5rem;
+}
+
+.advantages .right {
+  display: inline-block;
+  width: 80%;
+}
+
+.advantages .icon {
+  color: orange;
+  display: inline-block;
+  
+}
+
+.advantages h2 {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.advantages p {
+    margin-top: 0;
+}
+
+.advantages .item {
+    margin-bottom: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+iframe {
+    display: block;
+    width: 90%;
+    margin: 6.2rem auto;
+}
+
+.pricing {
+    /*box-sizing: border-box; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing .box {
+    border: 1px solid #111;
+    border-radius: 0.3rem;
+    width: 32%;
+    height: 34rem;
+    /*display: flex; */
+    /*flex-direction: column;*/
+    /*justify-content: space-between; */
+    text-align: center;
+} 
+
+.pricing h3 {
+    background-color: #ddd;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 1.2rem;
+}
+
+.pricing .box span.price {
+    font-size: 2.6rem;
+    font-weight: bold;
+    
+}
+
+.pricing .box p span {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.pricing .box p {
+    line-height: 3rem;
+}
+
+.pricing .box button {
+    width: 35%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.9rem;
+    background-color: #f1c40f;
+    border: none;
+}
+
+footer {
+    display: block;
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: #ddd;
+    padding: 2rem 1rem;
+    border-radius: 0.4rem;
+}
+
+footer span {
+    display: block;
+    text-align: right;
+}
+
+footer span.gray {
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+
+
+/* MEIDA QUERIES */
+
+/* for desktops */
+@media (min-width: 1024px) {
+    :root {
+        font-size: 10px;
+    }
+    
+    form input#submit {
+        width: 24%;
+   }
+}
+
+/* for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+        font-size: 8px;
+  }
+  
+  nav {
+    width: 46%;
+  }
+  
+  form input#submit {
+    width: 25%; 
+  }
+  
+  .pricing .box button {
+    width: 42%;
+  }
+}
+
+/* for mobile phones */
+@media (max-width: 767px) {
+  :root {
+    font-size: 7px;
+  }
+  
+  header {
+    display: block;
+    padding: 7px 14px;
+  }
+  
+  nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    flex-direction: column;
+  }
+  
+  nav span {
+    width: 100%;
+    display: block;
+    text-align: ceter;
+  }
+  
+  nav span a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  header img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  
+  main {
+    width: 95%;
+  }
+  
+  main .container {
+    width: 100%;
+  }
+  
+  form h2 {
+    width: 100%;
+    margin-top: 130px;
+  }
+  
+  form input#email {
+    width: 90%;
+    font-size: 14px;
+  }
+  
+  form input#submit {
+    width: 40%;
+    margin-top: 20px;
+  }
+  
+  .pricing {
+    display: block;
+  }
+  
+  .pricing .box {
+    display: block;
+    width: 90%;
+    min-height: 200px; 
+    margin: 10px auto;
+  }
+  
+  .pricing .price {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  footer {
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0;
+    margin-top: 21px;
+    padding-right: 15px; 
+  }
+  
+}

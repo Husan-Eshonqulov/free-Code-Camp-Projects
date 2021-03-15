@@ -1,0 +1,131 @@
+body {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
+  }
+  
+  /* for mobile devices */
+  @media (max-width: 767px) {
+    #title {
+      font-size: 130%;
+    }
+    
+    #img-caption {
+      font-size: 100%;
+    }
+    
+    #tribute-info {
+      font-size: 70%;
+    }
+    
+    footer {
+      font-size: 60%;
+    }
+  }
+  
+  /* for tablet devices */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #title {
+      font-size: 250%;
+    }
+    
+    #img-caption {
+      font-size: 200%;
+    }
+    
+    #tribute-info {
+      font-size: 100%;
+    }
+    
+    footer {
+      font-size: 90%;
+    }
+  }
+  
+  /* for desktops */
+  @media (min-width: 1024px) {
+    #title {
+       font-size: 350%;
+    }
+    
+    #img-caption {
+      font-size: 250%;
+    }
+    
+    #tribute-info {
+      font-size: 140%
+    }
+    
+    footer {
+      font-size: 120%;
+    }
+  }
+  
+  #title {
+    background-color: #3e45cf;
+    color: #ebc334;
+    text-align: center;
+    font-family: "Grandstander", sans-serif;
+    padding: 3%;
+    margin-top: 0;
+    margin-bottom: 1.4vh;
+  }
+  
+  #image {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #img-caption {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Patrick Hand", sans-serif;
+    margin-top: 1.4vh;
+    margin-bottom: 3vh;
+  }
+  
+  #tribute-info {
+    display: block;
+    width: 96%;
+    font-family: "Comfortaa", sans-serif;
+    line-height: 170%;
+    text-align: justify;
+    color: gray;
+    margin: 0 auto;
+  }
+  
+  article a:hover {
+    text-decoration: none;
+    color: red;
+  }
+  
+  footer {
+    background-color: #3e45cf;
+    color: lightgray;
+    padding: 1.5%;
+    margin-top: 1%;
+    position: relative;
+  }
+  
+  footer p {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer a {
+    color: lightgreen;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: yellow;
+  }
+  
+  #author {
+    margin-bottom: 0.5%;
+  }
+  
+  #copyright {
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+  }

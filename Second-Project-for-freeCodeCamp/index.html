@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nizom Ota's meal delivery service</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="bg-banner">
+      <div class="banner-fon">
+        <header>
+          <h1 id="title">Nizom Ota's meal delivery service</h1>
+
+          <p id="description">
+            This service is a meal delivering service. <br> Get your meal through it quickly and easily
+          </p>
+        </header>
+
+        <main>
+          <form action="" method="" id="survey-form">
+            <div class="same-styles">
+              <div class="order">
+                <div class="meal-name">
+                  <label for="meal-name">Choose your meal</label>
+                  <select name="meal-name" id="meal-name">
+                    <option value="osh">Osh</option>
+                    <option value="honim">Honim</option>
+                    <option value="manti">Manti</option>
+                    <option value="qozon-kabob">Qozon-Kabob</option>
+                    <option value="chuchvara">Chuchvara</option>
+                  </select>
+                </div>
+
+                <div class="drink-name">
+                  <label for="drink-name">Choose your drink</label>
+                  <select name="drink-name" id="drink-name">
+                    <option value="black-tea">Black Tea</option>
+                    <option value="blue-tea">Blue Tea</option>
+                    <option value="coca-cola">Coca Cola</option>
+                    <option value="water">Water</option>
+                  </select>
+                </div>
+
+              </div>
+
+
+
+              <div class="quantity">
+                <div class="meal-quantity" id="dropdown">
+                  <label for="meal-quantity">Quantity of meal</label>
+                  <input type="number" id="meal-quantity" name="meal-quantity" min="1" max="5" value="1">
+                </div>
+
+                <div class="drink-quantity" id="dropdown">
+                  <label for="drink-quantity">Quantity of drink</label>
+                  <input type="number" id="drink-quantity" name="drink-quantity" min="1" max="10" value="1">
+                </div>
+              </div>
+
+
+
+              <div class="personal-inf">
+                <label for="name" id="name-label">Name </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="15" required>
+
+                <label for="address" id="address-label">Address </label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+                <label for="phone-number" id="phone-number-label">Phone Number </label>
+                <input type="number" id="phone-number" name="phone-number" placeholder="Enter your phone number" required>
+
+                <label for="email" id="email-label">Email </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+
+
+
+            <div class="payment">
+              <label class=payment-label>Choose payment method</label>
+
+              <div class="pay-item">
+                <input id="pay-cash" name="payment" type="radio" value="cash" checked>
+                <label for="pay-cash">Cash </label>
+              </div>
+
+              <div class="pay-item">
+                <input id="pay-card" name="payment" type="radio" value="card">
+                <label for="pay-card">Card </label>
+              </div>
+
+              <div class="pay-item">
+                <input id="pay-visa" name="payment" type="radio" value="visa">
+                <label for="pay-visa">Visa </label>
+              </div>
+            </div>
+
+
+
+            <div class="additional-information">
+              <label for="add-inf">You can write additional information on the order</label>
+              <textarea name="add-inf" id="add-inf" cols="30" rows="3" placeholder="  additional information..."></textarea>
+            </div>
+
+
+            <input type="submit" value="SEND" class="submit">
+
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
